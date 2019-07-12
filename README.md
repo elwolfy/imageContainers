@@ -171,6 +171,17 @@ service haproxy status -l
 
 exportar docker image to tar file
 =================================
+https://docs.docker.com/engine/reference/commandline/export/
+
+usar pscp para exportar remotamente tar de containers
+=========================================
+https://www.ssh.com/ssh/putty/putty-manuals/0.68/Chapter5.html
+pscp [options] source [source...] [user@]host:target
+
+importar docker image desde tar file
+============================
+sudo tar -c . | docker import - mtp-backend
+
 
 docker save -o /home/jorge/imagesContainer/postgresql.tar postgres/postgresql
 
