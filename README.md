@@ -1,6 +1,11 @@
 # imageContainers
 Staying image containers of cluster scalability and availability by software
 
+listar containers exited (parados)
+=================================
+docker ps --filter "status=exited"
+docker ps -f "status=exited"
+docker ps -a
 
 instalar docker
 ===============
